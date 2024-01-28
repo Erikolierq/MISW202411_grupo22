@@ -1,5 +1,13 @@
 # MISW202411_grupo22
 
+## Integrantes
+
+| Nombre              | Correo                     |
+|--------------------|---------------------------|
+| Camilo Peña         | cc.pena2@uniandes.edu.co  |
+| Erik Gustavo Olier  | e.olierq@uniandes.edu.co  |
+| Irina Sinning       | i.sinning@uniandes.edu.co |
+| Eduardo Benito Castro | e.benito@uniandes.edu.co |
 ## [ Resumen general SportApp](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Resumen-de-Proyecto-SportApp)
 
 ## [Wiki del Proyecto](https://github.com/Erikolierq/MISW202411_grupo22/wiki) 
