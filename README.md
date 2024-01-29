@@ -12,7 +12,7 @@
 ## [Resumen general SportApp](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Resumen-de-Proyecto-SportApp)
 
 ## [Wiki del Proyecto](https://github.com/Erikolierq/MISW202411_grupo22/wiki)
-- [**Enlace Wiki**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Historias-de-usuario)
+- [**Enlace Wiki**](https://github.com/Erikolierq/MISW202411_grupo22/wiki)
   
 ## Progreso del Proyecto
 
