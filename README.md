@@ -9,13 +9,22 @@
 | Irina Sinning       | i.sinning@uniandes.edu.co |
 | Eduardo Benito Castro | e.benito@uniandes.edu.co |
 
-## [Resumen general SportApp](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Resumen-de-Proyecto-SportApp)
+## Enlaces del Proyecto SportApp
 
-## [Wiki del Proyecto](https://github.com/Erikolierq/MISW202411_grupo22/wiki)
-- [**Enlace Wiki**](https://github.com/Erikolierq/MISW202411_grupo22/wiki)
-  
-## Progreso del Proyecto
+- [Resumen general SportApp](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Resumen-de-Proyecto-SportApp)
+- [Proyecto SportApp Total](https://uniandes-my.sharepoint.com/:b:/g/personal/i_sinning_uniandes_edu_co/ESBqdYwdthRBgrUWL0SlFrQB56ur90MvCnUr_rl-6dXJQw?e=H1d2jx) [Consulte Aquí](https://uniandes-my.sharepoint.com/:b:/g/personal/i_sinning_uniandes_edu_co/ESBqdYwdthRBgrUWL0SlFrQB56ur90MvCnUr_rl-6dXJQw?e=H1d2jx)
+
+## Wiki del Proyecto
+- [Enlace Wiki](https://github.com/Erikolierq/MISW202411_grupo22/wiki)
+
+## Readme
+- [Enlace al Readme](https://github.com/Erikolierq/MISW202411_grupo22/blob/main/README.md)
+
+## Desarrollo 
 
 ### Semana 1
-- [**Listado de Historias de Usuario Relacionadas con la Arquitectura**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Historias-de-usuario)
-- [**Visión de Arquitectura - Cuaderno de Trabajo de la Semana 1**](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EdEvZMOGO41Bn9QKdK0XuYsB6tGYlTODALj8GVp4uinAnQ?e=jvqheO)
+- [**Listado de historias de usuario relacionadas con la arquitectura**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Historias-de-usuario)
+- [**Visión de Arquitectura - Cuaderno de Trabajo Semana 1**](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EdEvZMOGO41Bn9QKdK0XuYsB6tGYlTODALj8GVp4uinAnQ?e=jvqheO)
+
+### Semana 2
+- [**Backlog de arquitectura - Cuaderno de Trabajo Semana 2**](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EU1G3n3PrsdMtGgi5y9-SVEBgqMrtXMeNpQPzS_ixhNp7Q?e=x9MLfc)
