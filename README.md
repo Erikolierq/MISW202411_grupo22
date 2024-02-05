@@ -27,4 +27,6 @@
 - [**Visión de Arquitectura - Cuaderno de Trabajo Semana 1**](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EdEvZMOGO41Bn9QKdK0XuYsB6tGYlTODALj8GVp4uinAnQ?e=jvqheO)
 
 ### Semana 2
-- [**Backlog de arquitectura - Cuaderno de Trabajo Semana 2**](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EU1G3n3PrsdMtGgi5y9-SVEBgqMrtXMeNpQPzS_ixhNp7Q?e=x9MLfc)
+- [**Historias de Arquitectura relacionadas con Disponibilidad**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Historias-de-Arquitectura-relacionadas-con-Disponibilidad)
+- [**Backlog de arquitectura - Enlace a Project - Semana 2** ](https://github.com/users/Erikolierq/projects/2)
+- [**Backlog de arquitectura - Cuaderno de Trabajo Semana 2** ](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/Ef3cSHL9s-dLm7o5QNJDmYoBh70qauYVPOYbxcskueKswA?e=XSAm7E)
