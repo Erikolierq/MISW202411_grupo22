@@ -41,5 +41,10 @@
 1. [**Diseño de Arquitectura Disponibilidad - Cuaderno de Trabajo Semana 3** ](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/ES9EXkqrxotJtk5lrbx1p38BqsDWht59iyNp3ieND5_q2w?e=RLdaAB)
    - [**Diseño de Arquitectura del Proyecto: SportApp - Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Dise%C3%B1o-de-Arquitectura-del-Proyecto:-SportApp)
    - [**Arquitectura de Lanzamiento del Sprint - Semana 3 - Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Arquitectura-de-Lanzamiento-del-Sprint-%E2%80%90-Semana-3)
+
+   - [Vista Funcional (Estilo Microservicios)](https://uniandes-my.sharepoint.com/:i:/g/personal/i_sinning_uniandes_edu_co/EYeRDM8X3k1Fqtap4vOM9cMBf-cpqBYvoKOZs1bMyFzvHQ?e=zIJZrC)
+   - [Vista de Despliegue](https://uniandes-my.sharepoint.com/:i:/g/personal/i_sinning_uniandes_edu_co/ETbJEu16qfFIgVaRLJDhviQBepXYOHCP0Zg5kuMfvKJ3Lg?e=z8HW1V)
+   - [Vista de Información](https://uniandes-my.sharepoint.com/:i:/g/personal/i_sinning_uniandes_edu_co/EcshQX3NRQxLnxePhrm-NBkBRvfS-l9k4hlkmceWCtbqnQ?e=yWDSv6)
+   - [Vista de Concurrencia](https://uniandes-my.sharepoint.com/:i:/g/personal/i_sinning_uniandes_edu_co/Ed8lZPK8AHtKrbACOtWChwkBWeGxLOOSKwwcP-Q1aFH8WQ?e=DqzwMt)
 1. [**Descripción de Tácticas de Arquitectura utilizadas para favorecer la disponibilidad y Razonamiento - Cuaderno de Trabajo Semana 3** ](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/ES9EXkqrxotJtk5lrbx1p38BqsDWht59iyNp3ieND5_q2w?e=RLdaAB)
    - [**Descripción de Tácticas de Arquitectura utilizadas para favorecer la disponibilidad y Razonamiento  - Semana 3 - Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Arquitectura-de-Lanzamiento-del-Sprint-%E2%80%90-Semana-3)
