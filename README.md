@@ -52,7 +52,7 @@
 ### **Semana 4** 
 
 * #### Actividades previas
-  - [**Actualización de Sprint: SportApp - Wiki** ]()
+  - [**Actualización de Sprint: SportApp - Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Actualizaci%C3%B3n-de-Sprint:-SportApp-%E2%80%90Semana-4)
   - [**Actualización de Diseño de Arquitectura del Proyecto: SportApp - Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Dise%C3%B1o-de-Arquitectura-del-Proyecto:-SportApp)
 
 * #### Actividades realizadas
