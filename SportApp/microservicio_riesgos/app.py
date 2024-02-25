@@ -12,7 +12,7 @@ app_context.push()
 class VistaMonitoreoDeportivo(Resource):
 
     def post(self, id_ejercicio):
-        content = requests.get('http://127.0.0.1:5000/ejercicio/{}'.format(id_ejercicio))
+        content = requests.get('http://127.0.0.1:5001/ejercicio/{}'.format(id_ejercicio))
 
         if content.status_code == 404:
             return content.json(),404
@@ -24,4 +24,4 @@ class VistaMonitoreoDeportivo(Resource):
             return json.dumps(ejercicio)
 
 api = Api(app)
-api.add_resource(VistaMonitoreoDeportivo, '/ejercicio,<int:id_ejercicio>/nivel')
+api.add_resource(VistaMonitoreoDeportivo, '/ejercicio/<int:id_ejercicio>/nivel')
