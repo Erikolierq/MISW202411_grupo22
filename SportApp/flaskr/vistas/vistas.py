@@ -2,6 +2,8 @@ from flask_restful import Resource
 from ..modelos import db, Situacion, SituacionSchema, Alerta, AlertaSchema, Ejercicio, EjercicioSchema
 from flask import request
 from sqlalchemy.exc import IntegrityError
+from ..tareas import crear_ejercicio, crear_alerta, actualizar_situacion  # Asegúrate de que esta importación refleje la ubicación real de tus tareas
+
 
 ejercicio_schema = EjercicioSchema()
 situacion_schema = SituacionSchema()
@@ -9,14 +11,14 @@ alerta_schema = AlertaSchema()
 
 class VistaEjercicios(Resource):
     def post(self):
-        nuevo_ejercicio = Ejercicio(nombre=request.json["nombre"],duracion = request.json["duracion"])
-        db.session.add(nuevo_ejercicio)
-        db.session.commit()
-        return ejercicio_schema.dump(nuevo_ejercicio)
-    
-    def get(self):
-        return [ejercicio_schema.dump(ejercicio) for ejercicio in Ejercicio.query.all()]
+        # Llama a la tarea de Celery en lugar de interactuar directamente con la base de datos
+        resultado = crear_ejercicio.delay(request.json["nombre"], request.json["duracion"])
+        return {'mensaje': 'Creación de ejercicio en proceso', 'task_id': str(resultado)}, 202
 
+    def get(self):
+        ejercicios = Ejercicio.query.all()
+        return ejercicio_schema.dump(ejercicios, many=True), 200
+    
 class VistaEjercicio(Resource):
     def get(self, id_ejercicio):
         return ejercicio_schema.dump(Ejercicio.query.get_or_404(id_ejercicio))
@@ -37,34 +39,29 @@ class VistaEjercicio(Resource):
 
 class VistaSituacion(Resource):
     def get(self, id_situacion):
-        return situacion_schema.dump(Situacion.query.get_or_404(id_situacion))
+        situacion = Situacion.query.get_or_404(id_situacion)
+        return situacion_schema.dump(situacion), 200
     
     def put(self, id_situacion):
-        situacion = Situacion.query.get_or_404(id_situacion)
-        situacion.nombre_riesgo = request.json.get("nombre riesgo", situacion.nombre_riesgo)
-        situacion.riesgo = request.json.get("riesgo", situacion.riesgo)
-        db.session.commit()
-        return situacion_schema.dump(situacion)
-    
+        resultado = actualizar_situacion.delay(id_situacion, request.json.get("nombre riesgo"), request.json.get("riesgo"))
+        return {'mensaje': 'Actualización de situación en proceso', 'task_id': str(resultado)}, 202
+
     def delete(self, id_situacion):
         situacion = Situacion.query.get_or_404(id_situacion)
         db.session.delete(situacion)
         db.session.commit()
-        return '',204
+        return '', 204
 
 
 
 class VistaAlertas(Resource):
+    def post(self):
+        resultado = crear_alerta.delay(request.json['nombre riesgo'], request.json['generar'])
+        return {'mensaje': 'Creación de alerta en proceso', 'task_id': str(resultado)}, 202
 
     def get(self):
-        return [alerta_schema.dump(alerta) for alerta in Alerta.query.all()]
-    
-    def post(self):
-        nueva_alerta = Alerta(nombre_alerta = request.json['nombre riesgo'],\
-                                    generar= request.json['generar'])
-        db.session.add(nueva_alerta)
-        db.session.commit()
-        return alerta_schema.dump(nueva_alerta)
+        alertas = Alerta.query.all()
+        return alerta_schema.dump(alertas, many=True), 200
     
 class VistaAlerta(Resource):
 
