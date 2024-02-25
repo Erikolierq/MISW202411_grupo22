@@ -1,6 +1,7 @@
 from celery import Celery
 from flaskr import create_app
-from flaskr.modelos import db, Ejercicio, Alerta, Situacion
+from flaskr.modelos import db, Situacion, SituacionSchema, Alerta, AlertaSchema, Ejercicio, EjercicioSchema
+
 from sqlalchemy.exc import IntegrityError
 
 celery_app = Celery(__name__, broker='redis://localhost:6379/0')
@@ -8,11 +9,15 @@ celery_app = Celery(__name__, broker='redis://localhost:6379/0')
 # Define tus tareas de Celery aquí
 @celery_app.task
 def crear_ejercicio(nombre, duracion):
+    
     try:
         nuevo_ejercicio = Ejercicio(nombre=nombre, duracion=duracion)
+        print(nuevo_ejercicio)
         db.session.add(nuevo_ejercicio)
         db.session.commit()
+        
         return True
+    
     except IntegrityError:
         db.session.rollback()
         return False

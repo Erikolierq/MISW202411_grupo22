@@ -3,7 +3,7 @@ from .modelos import db, Ejercicio, Situacion, Alerta, Riesgo
 from .modelos import SituacionSchema
 from flask_restful import Api
 from .vistas import VistaAlertas, VistaAlerta, VistaEjercicio, VistaEjercicios, VistaEjerciciosSituaciones, VistaSituacion, VistaSituacionAlerta
-
+from .tareas import celery_app
 
 app = create_app('default')
 app_context = app.app_context()
