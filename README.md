@@ -84,3 +84,13 @@
     - [**Código implementado - Enlace aquí** ](https://github.com/Erikolierq/MISW202411_grupo22/tree/main/SportApp/flaskr)
 
 - [**Backlog de Arquitectura - Enlace a Project**](https://github.com/users/Erikolierq/projects/2)
+- 
+
+### **Semana 6** (En Desarrollo)
+
+* #### Actividades realizadas
+- [**Lanzamiento Sprint 2 Seguridad**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Lanzamiento-de-Sprint-2-Seguridad-%E2%80%90-SportApp)
+  - [**Lanzamiento Sprint 2 - Cuaderno de Trabajo semana 6**](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EfCfJSEV9lVPi0985lDW1WkBXAb5EqzMpaihh9a2xM9t8w?e=Obk66m)
+  - [**Historias de Arquitectura relacionadas con Seguridad**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Historias-de-Arquitectura-relacionadas-con-Seguridad)
+  - [**Selección de Historias de Arquitectura Relacionadas con Seguridad**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Selecci%C3%B3n-de-Historias-de-Arquitectura-Relacionadas-con-Seguridad)
+  - [**Backlog de Arquitectura - Enlace a Project**](https://github.com/users/Erikolierq/projects/2)
