@@ -86,7 +86,7 @@
 - [**Backlog de Arquitectura - Enlace a Project**](https://github.com/users/Erikolierq/projects/2)
 - 
 
-### **Semana 6** (En Desarrollo)
+### **Semana 6** 
 
 * #### Actividades realizadas
 - [**Lanzamiento Sprint 2 Seguridad**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Lanzamiento-de-Sprint-2-Seguridad-%E2%80%90-SportApp)
