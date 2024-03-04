@@ -94,3 +94,27 @@
   - [**Historias de Arquitectura relacionadas con Seguridad**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Historias-de-Arquitectura-relacionadas-con-Seguridad)
   - [**Selección de Historias de Arquitectura Relacionadas con Seguridad**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Selecci%C3%B3n-de-Historias-de-Arquitectura-Relacionadas-con-Seguridad)
   - [**Backlog de Arquitectura - Enlace a Project**](https://github.com/users/Erikolierq/projects/2)
+ 
+
+### **Semana 7** (En Desarrollo) 
+
+* #### Actividades previas
+  - [**Actualización de Sprint 2: SportApp - Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Actualizaci%C3%B3n-de-Sprint-2-:-SportApp-%E2%80%90-Semana-7-%E2%80%90-SportApp)
+  - [**Actualización de Diseño de Arquitectura del Proyecto: SportApp - Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Dise%C3%B1o-de-Arquitectura-del-Proyecto:-SportApp)
+
+* #### Actividades realizadas
+- [**Tácticas de arquitectura para favorecer la confidencialidad y la integridad en arquitecturas basadas en Microservicios** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/T%C3%A1cticas-de-arquitectura-para-favorecer-la-confidencialidad-y-la-integridad-en-arquitecturas-basadas-en-Microservicios)
+  - [**Tácticas de arquitectura para favorecer la confidencialidad y la integridad en Microservicios - Cuaderno de Trabajo semana 7** ](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EVspFU4kWVFJmeNBNPPAexgB3qCknNYh5C4zC0dKX01nZQ?e=aBcHuL)
+  - [**Tácticas de arquitectura para favorecer la confidencialidad y la integridad en Microservicios - Pagina Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/T%C3%A1cticas-de-arquitectura-para-favorecer-la-confidencialidad-y-la-integridad-en-arquitecturas-basadas-en-Microservicios)
+   - [Vista Funcional (Estilo Microservicios)]()
+   - [Vista de Despliegue]()
+   - [Vista de Información]()
+   - [Vista de Concurrencia]()
+
+- [**Diseño del Experimento 2** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Dise%C3%B1o-del-Experimento-2-:--SportApp)
+  - [**Diseño del Experimento 2 - Cuaderno de Trabajo Semana 7** ](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EdlvRAQnKNpJn0MMnIYw1VEBQARrBw3U0N-8-1l7QcQeTA?e=QfPbRv)
+  - [**Diseño del Experimento 2 - Pagina Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Dise%C3%B1o-del-Experimento-2-:--SportApp)
+
+- [**Backlog de Arquitectura - Enlace a Project** ](https://github.com/users/Erikolierq/projects/2)
+
+* Otros: [**Revisión de Caso de Estudio: Foto Alpes Semana 7** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Revisi%C3%B3n-del-Caso-de-Estudio:-Foto-Alpes-Semana-7)
