@@ -96,7 +96,7 @@
   - [**Backlog de Arquitectura - Enlace a Project**](https://github.com/users/Erikolierq/projects/2)
  
 
-### **Semana 7** (En Desarrollo) 
+### **Semana 7** 
 
 * #### Actividades previas
   - [**Actualización de Sprint 2: SportApp - Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Actualizaci%C3%B3n-de-Sprint-2-:-SportApp-%E2%80%90-Semana-7-%E2%80%90-SportApp)
@@ -106,10 +106,10 @@
 - [**Tácticas de arquitectura para favorecer la confidencialidad y la integridad en arquitecturas basadas en Microservicios** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/T%C3%A1cticas-de-arquitectura-para-favorecer-la-confidencialidad-y-la-integridad-en-arquitecturas-basadas-en-Microservicios)
   - [**Tácticas de arquitectura para favorecer la confidencialidad y la integridad en Microservicios - Cuaderno de Trabajo semana 7** ](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EVspFU4kWVFJmeNBNPPAexgB3qCknNYh5C4zC0dKX01nZQ?e=aBcHuL)
   - [**Tácticas de arquitectura para favorecer la confidencialidad y la integridad en Microservicios - Pagina Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/T%C3%A1cticas-de-arquitectura-para-favorecer-la-confidencialidad-y-la-integridad-en-arquitecturas-basadas-en-Microservicios)
-   - [Vista Funcional (Estilo Microservicios)]()
-   - [Vista de Despliegue](https://uniandes-my.sharepoint.com/:i:/g/personal/i_sinning_uniandes_edu_co/EZkhhXxogbJMjVeTJ4EC6TEBLibH9HrsrGswCMKpgUn5Aw?e=lRTRx8)
-   - [Vista de Información]()
-   - [Vista de Concurrencia]()
+   - [Vista Funcional (Estilo Microservicios)](https://uniandes-my.sharepoint.com/:i:/g/personal/i_sinning_uniandes_edu_co/EbEIKB2FTIdJp800MPssOz4BAkm_TRC88jD8nlID6aCWEA?e=Y5l4mf)
+   - [Vista de Despliegue](https://uniandes-my.sharepoint.com/:i:/g/personal/i_sinning_uniandes_edu_co/EQNd8gcQ0w9Aqpjo4TzkWYYBefPz5gV1o9xWfdyP4Jw5hg?e=1RPtnw)
+   - [Vista de Información](https://uniandes-my.sharepoint.com/:i:/g/personal/i_sinning_uniandes_edu_co/EX-QIlp0zvFDrGa-WWV15RQBBl6VRd-G9RkYSezTteeZfQ?e=4xFvoP)
+   - [Vista de Concurrencia](https://uniandes-my.sharepoint.com/:i:/g/personal/i_sinning_uniandes_edu_co/EZHvfCWzjwxJoi2JTbQF-y4BIdu2D8HK0sCoxK9FU_zMQA?e=2hV0nF)
 
 - [**Diseño del Experimento 2** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Dise%C3%B1o-del-Experimento-2-:--SportApp)
   - [**Diseño del Experimento 2 - Cuaderno de Trabajo Semana 7** ](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EdlvRAQnKNpJn0MMnIYw1VEBQARrBw3U0N-8-1l7QcQeTA?e=QfPbRv)
