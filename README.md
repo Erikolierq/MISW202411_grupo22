@@ -118,3 +118,16 @@
 - [**Backlog de Arquitectura - Enlace a Project** ](https://github.com/users/Erikolierq/projects/2)
 
 * Otros: [**Revisión de Caso de Estudio: Foto Alpes Semana 7** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Revisi%C3%B3n-del-Caso-de-Estudio:-Foto-Alpes-Semana-7)
+
+### **Semana 8** 
+  - [**Informe de Desarrollo del Experimento SportApp - Seguridad - Semana 8- Pagina Wiki**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Informe-de-Desarrollo-del-Experimento-SportApp-%E2%80%90-Semana-8)
+    - [**Manual de Instalación y Configuración**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Manual-de-Instalaci%C3%B3n-y-Configuraci%C3%B3n)
+    - [**Documentación del Backend ‐Experimento de Seguridad SportApp‐2**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Documentaci%C3%B3n-del-Backend-%E2%80%90Experimento-de-Seguridad-SportApp%E2%80%902)
+    - [**Documentación del Frontend ‐Experimento de Seguridad SportApp‐3**](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Documentaci%C3%B3n-del-Frontend-%E2%80%90Experimento-de-Seguridad-SportApp%E2%80%903)
+
+* #### Actividades realizadas
+- [**Experimentación** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Experimentaci%C3%B3n%E2%80%90Seguridad%E2%80%90-Semana-8)
+  - [**Experimentación y Análisis de los resultados obtenidos - Cuaderno de Trabajo semana 8** ](https://uniandes-my.sharepoint.com/:p:/g/personal/i_sinning_uniandes_edu_co/EZuaAH8Xw1tDgV_w8o259EEBPuZ_nV19fi6ZpQUHWB3cug?e=7SIRDR)
+  - [**Experimentación y Análisis de los resultados obtenidos - Pagina Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Experimentaci%C3%B3n%E2%80%90Seguridad%E2%80%90-Semana-8)
+  - [**Evidencias - Pagina Wiki** ](https://github.com/Erikolierq/MISW202411_grupo22/wiki/Evidencias-Experimentaci%C3%B3n-%E2%80%90-Semana-8)
+- [**Backlog de Arquitectura - Enlace a Project**](https://github.com/users/Erikolierq/projects/2)
