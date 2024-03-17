@@ -1,11 +1,13 @@
 from datetime import datetime, timedelta
 from functools import wraps
 from flask import request, jsonify, current_app
+import logging
 import jwt
 from app.models import User
 from app import db, app
 import ssl
 from app.models import User, TrainingSession, MedicalRecord
+
 
 ROLES = {
     'deportista': ['deportista'],
@@ -23,6 +25,7 @@ def authenticate_user(usuario, password):
         current_app.logger.warning(f"Authentication failed for user: {usuario}")
         return None
     current_app.logger.info(f"User {usuario} authenticated successfully")
+    
     return user
 
 def convert_token_string_to_bytes(token_str):
@@ -88,19 +91,18 @@ def token_required(expected_role):
             if 'Authorization' in request.headers:
                 token = request.headers['Authorization'].split()[1]
 
-            if not token:
-                return jsonify({'message': 'Token is missing'}), 401
+            if not token or not verify_certificate(token):
+                return {'message': 'Token is missing or invalid'}, 403
 
             try:
-                data = jwt.decode(token, current_app.config['SECRET_KEY'], algorithms=['HS256'])
-                current_user = User.query.get(data['sub'])
-                if current_user.rol not in ROLES[expected_role]:
-                    return jsonify({'message': 'Unauthorized access'}), 403
-            except jwt.ExpiredSignatureError:
-                return jsonify({'message': 'Token has expired'}), 401
-            except jwt.InvalidTokenError:
-                return jsonify({'message': 'Token is invalid'}), 401
-
+                data = jwt.decode(token, app.config['SECRET_KEY'])
+                current_user = User.query.filter_by(public_id=data['public_id']).first()
+            except:
+                return jsonify({'message': 'Token is invalid'}), 403
+            if not current_user:
+                return jsonify({'message': 'User not found'}), 403
+            if ROLES[current_user.rol] < ROLES[expected_role]:
+                return jsonify({'message': 'Unauthorized access'}), 403
             return f(current_user, *args, **kwargs)
 
         return decorated_function

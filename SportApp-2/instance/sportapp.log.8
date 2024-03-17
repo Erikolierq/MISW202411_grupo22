@@ -1,0 +1,96 @@
+2024-03-16 20:30:59,984 ERROR: Exception on /ejercicios [GET]
+Traceback (most recent call last):
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 339, in _decode_jwt_from_request
+    encoded_token, csrf_token = get_encoded_token_function()
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 190, in _decode_jwt_from_headers
+    header_name = config.header_name
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\config.py", line 80, in header_name
+    name = current_app.config["JWT_HEADER_NAME"]
+KeyError: 'JWT_HEADER_NAME'
+2024-03-16 20:31:22,288 ERROR: Exception on /ejercicios [GET]
+Traceback (most recent call last):
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 339, in _decode_jwt_from_request
+    encoded_token, csrf_token = get_encoded_token_function()
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 191, in _decode_jwt_from_headers
+    header_type = config.header_type
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\config.py", line 87, in header_type
+    return current_app.config["JWT_HEADER_TYPE"]
+KeyError: 'JWT_HEADER_TYPE'
+2024-03-16 20:31:49,072 ERROR: Exception on /ejercicios [GET]
+Traceback (most recent call last):
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 339, in _decode_jwt_from_request
+    encoded_token, csrf_token = get_encoded_token_function()
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 318, in <lambda>
+    (location, lambda: _decode_jwt_from_cookies(refresh))
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 239, in _decode_jwt_from_cookies
+    cookie_key = config.access_cookie_name
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\config.py", line 99, in access_cookie_name
+    return current_app.config["JWT_ACCESS_COOKIE_NAME"]
+KeyError: 'JWT_ACCESS_COOKIE_NAME'
+2024-03-16 20:32:11,394 ERROR: Exception on /ejercicios [GET]
+Traceback (most recent call last):
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\app.py", line 870, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\app.py", line 855, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)  # type: ignore[no-any-return]
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_restful\__init__.py", line 489, in wrapper
+    resp = resource(*args, **kwargs)
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask\views.py", line 110, in view
+    return current_app.ensure_sync(self.dispatch_request)(**kwargs)  # type: ignore[no-any-return]
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_restful\__init__.py", line 604, in dispatch_request
+    resp = meth(*args, **kwargs)
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 167, in decorator
+    verify_jwt_in_request(
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 94, in verify_jwt_in_request
+    jwt_data, jwt_header, jwt_location = _decode_jwt_from_request(
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 339, in _decode_jwt_from_request
+    encoded_token, csrf_token = get_encoded_token_function()
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 318, in <lambda>
+    (location, lambda: _decode_jwt_from_cookies(refresh))
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\view_decorators.py", line 240, in _decode_jwt_from_cookies
+    csrf_header_key = config.access_csrf_header_name
+  File "C:\Users\blood\OneDrive\Escritorio\arq_sec\misw202411_grupo22\sportapp-2\venv\lib\site-packages\flask_jwt_extended\config.py", line 167, in access_csrf_header_name
+    return current_app.config["JWT_ACCESS_CSRF_HEADER_NAME"]
+KeyError: 'JWT_ACCESS_CSRF_HEADER_NAME'

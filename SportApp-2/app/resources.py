@@ -1,9 +1,11 @@
-from flask import request
+from flask import request, jsonify
 from flask_restful import Resource
 from app.models import User, TrainingSession, MedicalRecord, Instructor, Notification, Exercise, TrainingPlan, TrainingPlanExercise
 from app.tasks import send_message, send_verification_email, send_password_reset_email
 from app import db
 from app.authentication import authenticate_user, generate_jwt_token, authenticate_user, token_required
+from flask_jwt_extended import jwt_required, JWTManager
+
 
 
 # User resource remains the same
@@ -146,8 +148,79 @@ class LoginResource(Resource):
         else:
             return {'message': 'Invalid credentials'}, 401
 
+class CrearEjerciciosResource(Resource):
+    @jwt_required()
+    def post(self):
+        ejercicios_nuevos = request.json.get('ejercicios', [])  
+        try:
+            ejercicios_creados = []
+            for ejercicio in ejercicios_nuevos:
+                nuevo_ejercicio = Exercise(
+                    name=ejercicio['name'],
+                    description=ejercicio['description'],
+                    type=ejercicio['type'],
+                    duration=ejercicio['duration'],
+                    repetitions=ejercicio['repetitions']
+                )
+                db.session.add(nuevo_ejercicio)
+                ejercicios_creados.append(nuevo_ejercicio.to_dict())
+
+            db.session.commit()
+            return {'message': 'Ejercicios creados correctamente', 'ejercicios': ejercicios_creados}, 201
+        except Exception as e:
+            db.session.rollback()
+            return {'error': str(e)}, 500
+        
+class ListarEjerciciosResource(Resource):
+    @jwt_required()
+    def get(self):
+        try:
+            ejercicios = Exercise.query.all()
+            ejercicios_list = [ejercicio.to_dict() for ejercicio in ejercicios]
+            return {'ejercicios': ejercicios_list}, 200  # Return a dictionary
+        except Exception as e:
+            # Handle the exception and return a dictionary with error details
+            return {'error encontrao': str(e)}, 500
 
 
+        
+class ActualizarEjercicioResource(Resource):
+    @jwt_required()
+    def put(self, ejercicio_id):
+        try:
+            ejercicio = Exercise.query.get(ejercicio_id)
+            if not ejercicio:
+                return {'message': 'Ejercicio no encontrado'}, 404
+            
+            # Actualizar los campos del ejercicio
+            data = request.json
+            ejercicio.name = data.get('name', ejercicio.name)
+            ejercicio.description = data.get('description', ejercicio.description)
+            ejercicio.type = data.get('type', ejercicio.type)
+            ejercicio.duration = data.get('duration', ejercicio.duration)
+            ejercicio.repetitions = data.get('repetitions', ejercicio.repetitions)
+            
+            db.session.commit()
+            return {'message': 'Ejercicio actualizado correctamente'}, 200
+        except Exception as e:
+            db.session.rollback()
+            return {'error': str(e)}, 500
+
+class EliminarEjercicioResource(Resource):
+    @jwt_required()
+    def delete(self, ejercicio_id):
+        try:
+            ejercicio = Exercise.query.get(ejercicio_id)
+            if not ejercicio:
+                return {'message': 'Ejercicio no encontrado'}, 404
+            
+            db.session.delete(ejercicio)
+            db.session.commit()
+            return {'message': 'Ejercicio eliminado correctamente'}, 200
+        except Exception as e:
+            db.session.rollback()
+            return {'error': str(e)}, 500
+        
 # Nueva función para configurar 'api' y evitar importaciones cíclicas
 def configure_api(api):
     api.add_resource(UserResource, '/users/<int:user_id>')
@@ -163,3 +236,7 @@ def configure_api(api):
     api.add_resource(ExerciseResource, '/exercises/<int:exercise_id>')
     api.add_resource(TrainingPlanResource, '/training_plans/<int:plan_id>')
     api.add_resource(NotificationResource, '/notifications/<int:notification_id>')
+    api.add_resource(CrearEjerciciosResource, '/crear_ejercicios')
+    api.add_resource(ListarEjerciciosResource, '/ejercicios')
+    api.add_resource(ActualizarEjercicioResource, '/actualizar_ejercicio/<int:ejercicio_id>')
+    api.add_resource(EliminarEjercicioResource, '/eliminar_ejercicio/<int:ejercicio_id>')
