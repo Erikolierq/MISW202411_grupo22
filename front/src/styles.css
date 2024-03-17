@@ -1,0 +1,22 @@
+/* You can add global styles to this file, and also import other style files */
+.content {
+    max-width: 1300px;
+    min-width: 992px;
+    margin: auto;
+}
+
+td {
+    text-align: center;
+}
+
+th {
+    text-align: center;
+}
+
+.custom-row:not(:last-child) {
+    margin-bottom: 12px;
+}
+
+.datepicker .mat-mdc-form-field-subscript-wrapper  {
+    display: none !important;
+}

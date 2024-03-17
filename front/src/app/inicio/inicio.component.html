@@ -1,0 +1,50 @@
+<!-- inicio.component.html -->
+<div class="inicio-container text-center mt-5">
+  <h1 class="mb-4">Bienvenido a SportApp</h1>
+  <p class="mb-4">Explora y gestiona tus ejercicios y planes de entrenamiento.</p>
+  <div class="row justify-content-center">
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Detalle de Ejercicio</h5>
+          <p class="card-text">Consulta la información detallada de tus ejercicios.</p>
+          <a [routerLink]="['/inicio/detalles-ejercicio']" class="btn btn-primary">Ver ejercicio</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 mb-3">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Plan de Entrenamiento</h5>
+          <p class="card-text">Accede a tus planes de entrenamiento personalizados.</p>
+          <a [routerLink]="['/inicio/detalles-plan-entrenamiento']" class="btn btn-primary">Ver plan</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <h3>listado de entrenamientos</h3>
+  <ng-container *ngIf="ejercicios$ | async as ejercicios">
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Nombre</th>
+          <th>Descripción</th>
+          <th>Tipo</th>
+          <th>Duración</th>
+          <th>Repeticiones</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let ejercicio of ejercicios">
+          <td>{{ ejercicio.id }}</td>
+          <td>{{ ejercicio.name }}</td>
+          <td>{{ ejercicio.description }}</td>
+          <td>{{ ejercicio.type }}</td>
+          <td>{{ ejercicio.duration }}</td>
+          <td>{{ ejercicio.repetitions }}</td>
+        </tr>
+      </tbody>
+    </table>
+  </ng-container>
+</div>

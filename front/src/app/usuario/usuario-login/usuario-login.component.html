@@ -1,0 +1,43 @@
+<div class="container align-items-center">
+  <div class="row align-items-center">
+    <div class="col-xs-10 col-lg-5 card px-2 ">
+      <div class="card-body text-center">
+        <h2 class="my-2">SportApp</h2>
+        <p class="my-2">Ingreso al sistema</p>
+      </div>
+    </div>
+
+    <div class="col-xs-10 col-lg-5 container">
+      <div class="row">
+
+        <div class="my-2 row">
+          <h1 class="text-center">Ingreso</h1>
+        </div>
+        <div *ngIf="error!=''">
+          <div class="alert alert-danger" role="alert">
+            {{ error }}
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="staticEmail" class="col-lg-3 col-form-label">Usuario</label>
+          <div class="col-lg-9  ">
+            <input [(ngModel)]="usuario" type="text" class="form-control" placeholder="Usuario">
+          </div>
+        </div>
+        <div class="mb-3 row">
+          <label for="inputPassword" class="col-lg-3 col-form-label">Contraseña</label>
+          <div class="col-lg-9">
+            <input [(ngModel)]="contrasena" type="password" class="form-control" placeholder="*********">
+          </div>
+        </div>
+        <div class="col-12 text-center mt-3">
+          <button (click)="loginUsuario(usuario, contrasena)" type="button"
+            class="btn btn-info col-8">Ingresar</button>
+        </div>
+        <div class="col-12 text-center mt-2">
+          <p>¿No tienes cuenta? <a href="/registro">Regístrate</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

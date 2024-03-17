@@ -1,0 +1,147 @@
+<div class="container align-items-center">
+  <div class="row align-items-center">
+    <div class="col-xs-10 col-lg-5 card px-2">
+      <div class="card-body text-center">
+        <h2 class="my-2">SportApp</h2>
+        <p class="my-2">Registro de usuarios</p>
+      </div>
+    </div>
+
+    <div class="col-xs-10 col-lg-5 container">
+      <div class="row">
+        <div class="my-2 row">
+          <h1 class="text-center">Registro</h1>
+        </div>
+
+        <form [formGroup]="usuarioForm" (ngSubmit)="registrarUsuario()">
+          <!-- Usuario -->
+          <div class="mb-3 row">
+            <label for="usuario-input" class="col-lg-3 col-form-label">Usuario</label>
+            <div class="col-lg-9">
+              <input
+                id="usuario-input"
+                formControlName="usuario"
+                type="text"
+                class="form-control"
+                placeholder="Usuario"
+              />
+              <div *ngIf="usuarioForm.controls['usuario'].errors && usuarioForm.controls['usuario'].touched">
+                <small class="text-danger">
+                  {{ usuarioForm.controls['usuario'].errors['required'] ? 'El usuario es requerido.' : '' }}
+                </small>
+              </div>
+            </div>
+          </div>
+
+          <!-- Correo -->
+          <div class="mb-3 row">
+            <label for="correo-input" class="col-lg-3 col-form-label">Correo</label>
+            <div class="col-lg-9">
+              <input
+                id="correo-input"
+                formControlName="correo"
+                type="email"
+                class="form-control"
+                placeholder="Correo electrónico"
+              />
+              <!-- Mensajes de error para el correo -->
+            </div>
+          </div>
+
+          <!-- Contraseña -->
+          <div class="mb-3 row">
+            <label for="contrasena-input" class="col-lg-3 col-form-label">Contraseña</label>
+            <div class="col-lg-9">
+              <input
+                id="contrasena-input"
+                formControlName="contrasena"
+                type="password"
+                class="form-control"
+                placeholder="Contraseña"
+              />
+              <!-- Mensajes de error para la contraseña -->
+            </div>
+          </div>
+
+          <!-- Confirmar Contraseña -->
+          <div class="mb-3 row">
+            <label for="confirmPassword-input" class="col-lg-3 col-form-label">Confirmar contraseña</label>
+            <div class="col-lg-9">
+              <input
+                id="confirmPassword-input"
+                formControlName="confirmPassword"
+                type="password"
+                class="form-control"
+                placeholder="Confirmar contraseña"
+              />
+              <!-- Mensajes de error para confirmar contraseña -->
+            </div>
+          </div>
+
+          <!-- Rol -->
+          <div class="mb-3 row">
+            <label for="role-input" class="col-lg-3 col-form-label">Rol</label>
+            <div class="col-lg-9">
+              <select formControlName="rol" class="form-control">
+                <option [ngValue]="null">Seleccionar rol</option>
+                <option *ngFor="let rol of listaRoles" [ngValue]="rol">{{ rol }}</option>
+              </select>
+              <!-- Mensajes de error para el rol -->
+            </div>
+          </div>
+
+<!-- Nombre -->
+<div class="mb-3 row">
+  <label for="nombre-input" class="col-lg-3 col-form-label">Nombre</label>
+  <div class="col-lg-9">
+    <input
+      id="nombre-input"
+      formControlName="nombre"
+      type="text"
+      class="form-control"
+      placeholder="Nombre completo"
+    />
+    <div *ngIf="usuarioForm.controls['nombre'].errors && usuarioForm.controls['nombre'].touched">
+      <small class="text-danger">
+        {{ usuarioForm.controls['nombre'].errors['required'] ? 'El nombre es requerido.' : '' }}
+        {{ usuarioForm.controls['nombre'].errors['maxlength'] ? 'El nombre no puede exceder los 50 caracteres.' : '' }}
+      </small>
+    </div>
+  </div>
+</div>
+
+<!-- Número de Contacto -->
+<div class="mb-3 row">
+  <label for="numeroContacto-input" class="col-lg-3 col-form-label">Número de Contacto</label>
+  <div class="col-lg-9">
+    <input
+      id="numeroContacto-input"
+      formControlName="numeroContacto"
+      type="text"
+      class="form-control"
+      placeholder="Número de contacto"
+    />
+    <div *ngIf="usuarioForm.controls['numeroContacto'].errors && usuarioForm.controls['numeroContacto'].touched">
+      <small class="text-danger">
+        {{ usuarioForm.controls['numeroContacto'].errors['maxlength'] ? 'El número de contacto no puede exceder los 50 caracteres.' : '' }}
+      </small>
+    </div>
+  </div>
+</div>
+
+          <!-- Botón de Registro -->
+          <div class="col-12 text-center mt-3">
+            <button type="submit" class="btn btn-warning col-8" [disabled]="!usuarioForm.valid">
+              Registrarse
+            </button>
+          </div>
+
+          <!-- Enlace a Inicio de Sesión -->
+          <div class="col-12 text-center mt-2">
+            <p>¿Ya tienes cuenta? <a routerLink="/login">Inicia sesión</a></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>

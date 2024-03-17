@@ -1,0 +1,19 @@
+<div *ngIf="loading" class="loading-indicator">
+  Cargando detalles del ejercicio...
+</div>
+
+<div *ngIf="!loading">
+  <ng-container *ngIf="isEjercicioNotNull(); else noEjercicio">
+    <h2>Detalles del Ejercicio</h2>
+    <div class="ejercicio-detalles">
+      <p><strong>ID:</strong> {{ ejercicio?.id }}</p>
+      <p><strong>Nombre:</strong> {{ ejercicio?.name}}</p>
+      <p><strong>Descripción:</strong> {{ ejercicio?.description }}</p>
+      <!-- Agrega más detalles según las propiedades de tu modelo Ejercicio -->
+    </div>
+  </ng-container>
+
+  <ng-template #noEjercicio>
+    <p class="error-message">El ejercicio solicitado no está disponible.</p>
+  </ng-template>
+</div>

@@ -1,0 +1,9 @@
+runtime: python39  # Puedes eliminar esta línea, ya que no se necesita para una aplicación Angular
+
+handlers:
+- url: /
+  static_files: dist/index.html
+  upload: dist/index.html
+
+- url: /
+  static_dir: dist
